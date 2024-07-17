@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f5f0; /* Светло-зеленый фон */
+    color: #333;
+}
+header {
+    background-image: url("idk1.jpg"); /* Путь к вашему изображению */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Добавляем темную подложку */
+    position: relative; /* Создаем контекст позиционирования */
+}
+
+/* ... (другие стили) ... */
+
+.news article {
+    margin-bottom: 20px; /* Или другое значение */
+  }
+  
+  .news article {
+    display: flexbox; /* Используем flexbox для выравнивания */
+    justify-content: space-between; /* Размещаем элементы по краям */
+  }
+  
+  .news-image {
+    /* Убираем все margin и float */
+    margin-right: 0;
+    max-width: 30%; /* Ограничиваем максимальную ширину изображения */
+    height: auto; /* Сохраняем пропорции изображения */
+  }
+  
+
+  
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+header {
+    background-color: #4CAF50; /* Зеленый цвет шапки */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.news article {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
